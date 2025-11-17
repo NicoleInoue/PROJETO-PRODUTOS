@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
 import produtosRoute from './routes/produtos.js';
+import cors from 'cors';
 
 const cors = require('cors');
 
