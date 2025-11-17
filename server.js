@@ -3,9 +3,14 @@ import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
 import produtosRoute from './routes/produtos.js';
 
+const cors = require('cors');
+
 dotenv.config();
 
 const app = express();
+
+app.use(cors());
+
 const port = 3000;
 
 const supabase = createClient(
